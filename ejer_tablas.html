@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>U2 Tarea 3 | Jose Antonio Cortes</title>
+    <style>
+        body {
+            font-family: monospace;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        th {
+            background-color: #0000FF;
+            color: #FFFFFF;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1><u>Ejercicios sobre tablas</u></h1>
+    </div>
+    <br>
+    <h4>Ejercicio 1</h4>
+    <table border="0">
+        <tr>
+            <th>Nombre</th>
+            <th>Apellidos</th>
+            <th>Dirección</th>
+            <th>Teléfono</th>
+            <th>Email</th>
+        </tr>
+        <tr>
+            <td bgcolor="grey">Pepe</td>
+            <td bgcolor="grey">Pérez</td>
+            <td bgcolor="grey">Aquí</td>
+            <td bgcolor="grey">11111111</td>
+            <td bgcolor="grey">yosoy@pepe.es</td>
+        </tr>
+        <tr>
+            <td bgcolor="grey">Manuel</td>
+            <td bgcolor="grey">López</td>
+            <td bgcolor="grey">Allí</td>
+            <td bgcolor="grey">2222222</td>
+            <td bgcolor="grey">yosoy@manuel.es</td>
+        </tr>
+        <tr>
+            <td bgcolor="grey">María</td>
+            <td bgcolor="grey">Fernández</td>
+            <td bgcolor="grey">Mas allá</td>
+            <td bgcolor="grey">333333</td>
+            <td bgcolor="grey">yosoy@maria.es</td>
+        </tr>
+        <tr>
+            <td bgcolor="grey">Sara</td>
+            <td bgcolor="grey">Gallardo</td>
+            <td bgcolor="grey">Mas aquí</td>
+            <td bgcolor="grey">44444444</td>
+            <td bgcolor="grey">yosoy@sara.es</td>
+        </tr>
+    </table>
+    <br>
+    <!-- Actividad 2-->
+     <h4>Ejercicio 2</h4>
+    <table>
+        <caption>Alumnos matriculados</caption>
+        <tr>
+            <td bgcolor="grey" colspan="4">Nombre</td>
+            <td bgcolor="grey">Apellidos</td>
+            <td bgcolor="grey">Dirección</td>
+            <td bgcolor="#FFFF00">Teléfono</td>
+            <td bgcolor="green">Email</td>
+        </tr>
+        <tr>
+            <td bgcolor="grey" colspan="4">Pepe</td>
+            <td bgcolor="grey">Pérez</td>
+            <td bgcolor="grey">Aquí</td>
+            <td bgcolor="#FFFF00">11111111</td>
+            <td bgcolor="green">yosoy@pepe.es</td>
+        </tr>
+        <tr>
+            <td bgcolor="grey" colspan="4">Manuel</td>
+            <td bgcolor="grey">López</td>
+            <td bgcolor="grey">Allí</td>
+            <td bgcolor="#FFFF00">2222222</td>
+            <td bgcolor="green">yosoy@manuel.es</td>
+        </tr>
+        <tr>
+            <td bgcolor="grey" colspan="4">María</td>
+            <td bgcolor="grey">Fernández</td>
+            <td bgcolor="grey">Mas allá</td>
+            <td bgcolor="#FFFF00">333333</td>
+            <td bgcolor="green">yosoy@maria.es</td>
+        </tr>
+        <tr>
+            <td bgcolor="grey" colspan="4">Sara</td>
+            <td bgcolor="grey">Gallardo</td>
+            <td bgcolor="grey">Mas aquí</td>
+            <td bgcolor="#FFFF00">44444444</td>
+            <td bgcolor="green">yosoy@sara.es</td>
+        </tr>
+        <tr>
+            <td bgcolor="grey" colspan="4">Pie de la tabla donde pngo más texto para que se vea como crecen</td>
+        </tr>
+    </table>
+    <br>
+    <h4>Ejercicio 3</h4>
+    <!-- Actividad 3-->
+    <table border="1px solid black">
+        <caption>Horario de clase</caption>
+        <tr>
+            <th class="horas">Horas</th>
+            <th class="horario">Lunes</th>
+            <th class="horario">Martes</th>
+            <th class="horario">Miércoles</th>
+            <th class="horario">Jueves</th>
+            <th class="horario">Viernes</th>
+        </tr>
+        <tr>
+            <td bgcolor="orange">8:30</td>
+            <td rowspan="3" bgcolor="grey">Programación</td>
+            <td rowspan="2" bgcolor="grey">Programación</td>
+            <td rowspan="2" bgcolor="lightblue">IPE</td>
+            <td bgcolor="lightblue">IPE</td>
+            <td rowspan="3" bgcolor="grey">Programación</td>
+        </tr>
+        <tr>
+            <td bgcolor="orange">9:30</td>
+            <td rowspan="2" bgcolor="red">LM</td>
+        </tr>
+        <tr>
+            <td bgcolor="orange">10:30</td>
+            <td bgcolor="red">LM</td>
+            <td bgcolor="green">Sostenibilidad</td>
+        </tr>
+        <tr>
+            <td bgcolor="orange">11:30</td>
+            <td colspan="5" bgcolor="yellow">Recreo</td>
+        </tr>
+        <tr>
+            <td bgcolor="orange">12:00</td>
+            <td rowspan="3" bgcolor="brown" colspan="2">BDDAT</td>
+            <td rowspan="2" bgcolor="crimson">SistInf</td>
+            <td rowspan="3" bgcolor="crimson">SistInf</td>
+            <td rowspan="3" bgcolor="chucknorris">Entornos de Desarrollo</td>
+        </tr>
+        <tr>
+            <td bgcolor="orange">13:00</td>    
+        </tr>
+        <tr>
+            <td bgcolor="orange">14:00</td>
+            <td bgcolor="purple">Digitalización</td>
+        </tr>
+    </table>
+</body>
+</html>
