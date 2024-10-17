@@ -1,335 +1,270 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario LM | Jose Antonio Cortes</title>
-    <style>
-         body {
-            background: #F6EFBD;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-        }
-        .container {
-            margin-top: 15px;
-            margin-bottom: 15px;
-            background: #E9EED9;
-            border: 1px solid #000000;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-            padding: 20px;
-            width: 60%;
-            max-width: 600px;
-        }
-        h1 {
-            color: #4A4A4A;
-            text-align: center;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-        h3 {
-            color: #4A4A4A;
-            border-bottom: 2px solid #4A4A4A;
-            padding-bottom: 5px;
-            text-align: center;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-        label, input[type="text"] {
-            font-family: monospace;
-            font-size: 16px;
-        }
-        label {
-            display: block;
-            margin: 10px 0 5px;
-            text-align: left;
-            
-        }
-        input[type="text"],
-        input[type="email"],
-        input[type="file"],
-        select,
-        textarea {
-            width: calc(100% - 20px);
-            padding: 10px;
-            margin-bottom: 15px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-        .checkbox_align {
-            display: flex;
-            align-items: center;
-        }
-        input[type=checkbox] {
-            flex: none;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-bottom: 15px;
-        }
-        th, td {
-            padding: 10px;
-            text-align: left;
-            border: 1px solid #000000;
-        }
-        textarea {
-            resize: vertical;
-        }
-        button {
-            background-color: #4A90E2;
-            color: white;
-            padding: 10px 15px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        button:hover {
-            background-color: #357ABD;
-        }
-    </style>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Formulario LM | Jose Antonio Cortes</title>
+	<style>
+		body {
+			background: #0B192C;
+			margin: 0;
+			padding: 0;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			text-align: center;
+		}
+		input[type="text"],
+		input[type="email"],
+		select {
+			border: 1px solid #ccc;
+			border-radius: 5px;
+			width: 70%;
+		}
+		button {
+			background-color: #4A90E2;
+			color: white;
+			padding: 10px 15px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+		button:hover {
+			background-color: #357ABD;
+		}
+	</style>
 </head>
 <body>
-    <table class="container">
-        <tr>
-            <td>
-                <h1>FORMULARIO CURRÍCULUM VITAE</h1>
-                <form action="">
-                    <h3><u>DATOS PERSONALES</u></h3>
-                    <label for="name">Nombre:</label>
-                    <input type="text" name="name" id="name">
-                    <br>
-                    <label for="lastname">Apellidos:</label>
-                    <input type="text" name="lastname" id="lastname">
-                    <br>
-                    <label for="direction">Dirección:</label>
-                    <input type="text" name="direction" id="direction">
-                    <br>
-                    <label for="phone">Teléfono:</label>
-                    <input type="text" name="phone" id="phone">
-                    <br>
-                    <label for="email">Email:</label>
-                    <input type="email" name="email" id="email">
-                    <br>
-                    <label for="picture">Foto:</label>
-                    <input type="file" name="picture" id="picture">
-                    <br>
-
-                    <h3><u>DATOS ACADÉMICOS</u></h3>
-                    <table>
-                        <tr>
-                            <td class="checkbox_align">
-                                <input type="checkbox" name="primaria" id="primaria">
-                                <label for="primaria">Educación Primaria</label>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="checkbox_align">
-                                <input type="checkbox" name="secundaria" id="secundaria">
-                                <label for="secundaria">Educación Secundaria Obligatoria</label>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="checkbox_align">
-                                <input type="checkbox" name="bachillerato" id="bachillerato">
-                                <label for="bach illerato">Bachillerato</label>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="checkbox_align">
-                                <input type="checkbox" name="cfgm" id="cfgm">
-                                <label for="cfgm">Ciclo Formativo Grado Medio</label>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="checkbox_align">
-                                <input type="checkbox" name="cfgs" id="cfgs">
-                                <label for="cfgs">Ciclo Formativo Grado Superior</label>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="checkbox_align">
-                                <input type="checkbox" name="universidad" id="universidad">
-                                <label for="universidad">Universidad</label>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="checkbox_align">
-                                <input type="checkbox" name="master" id="master">
-                                <label for="master">Master</label>
-                            </td>
-                        </tr>
-                    </table>
-                    <h3><u>EXPERIENCIA PROFESIONAL</u></h3>
-                    <select name="work" id="work">
-                        <option selected>Seleccione su profesión</option>
-                        <option>Administración de Sistemas</option>
-                        <option>Técnico en desarrollo de aplicaciones web</option>
-                        <option>Técnico en desarrollo de aplicaciones multiplataformas</option>
-                        <option>Ingeniero de software</option>
-                        <option>Técnico en ciberseguridad</option>
-                    </select>
-                    <br>
-
-                    <h3><u>IDIOMAS</u></h3>
-                    <table border="1">
-                        <tr>
-                            <th>Idioma</th>
-                            <th>Nivel Escrito</th>
-                            <th>Nivel Hablado</th>
-                        </tr>
-                        <tr>
-                            <td>Inglés</td>
-                            <td>
-                                <select name="ingles_escrito">
-                                    <option selected>-</option>
-                                    <option value="alto">ALTO</option>
-                                    <option value="medio">MEDIO</option>
-                                    <option value="bajo">BAJO</option>
-                                </select>
-                            </td>
-                            <td>
-                                <select name="ingles_hablado">
-                                    <option selected>-</option>
-                                    <option value="alto">ALTO</option>
-                                    <option value="medio">MEDIO</option>
-                                    <option value="bajo">BAJO</option>
-                                </select>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Español</td>
-                            <td>
-                                <select name="espanol_escrito">
-                                    <option selected>-</option>
-                                    <option value="alto">ALTO</option>
-                                    <option value="medio">MEDIO</option>
-                                    <option value="bajo">BAJO</option>
-                                </select>
-                            </td>
-                            <td>
-                                <select name="espanol_hablado">
-                                    <option selected>-</option>
-                                    <option value="alto">ALTO</option>
-                                    <option value="medio">MEDIO</option>
-                                    <option value="bajo">BAJO</option>
-                                </select>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Francés</td>
-                            <td>
-                                <select name="frances_escrito">
-                                    <option selected>-</option>
-                                    <option value="alto">ALTO</option>
-                                    <option value="medio">MEDIO</option>
-                                    <option value="bajo">BAJO</option>
-                                </select>
-                            </td>
-                            <td>
-                                <select name="frances_hablado">
-                                    <option selected>-</option>
-                                    <option value="alto">ALTO</option>
-                                    <option value="medio">MEDIO</option>
-                                    <option value="bajo">BAJO</option>
-                                </select>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Alemán</td>
-                            <td>
-                                <select name="aleman_escrito">
-                                    <option selected>-</option>
-                                    <option value="alto">ALTO</option>
-                                    <option value="medio">MEDIO</option>
-                                    <option value="bajo">BAJO</option>
-                                </select>
-                            </td>
-                            <td>
-                                <select name="aleman_hablado">
-                                    <option selected>-</option>
-                                    <option value="alto">ALTO</option>
-                                    <option value="medio">MEDIO</option>
-                                    <option value="bajo">BAJO</option>
-                                </select>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Italiano</td>
-                            <td>
-                                <select name="italiano_escrito">
-                                    <option selected>-</option>
-                                    <option value="alto">ALTO</option>
-                                    <option value="medio">MEDIO</option>
-                                    <option value="bajo">BAJO</option>
-                                </select>
-                            </td>
-                            <td>
-                                <select name="italiano_hablado">
-                                    <option selected>-</option>
-                                    <option value="alto">ALTO</option>
-                                    <option value="medio">MEDIO</option>
-                                    <option value="bajo">BAJO</option>
-                                </select>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Portugués</td>
-                            <td>
-                                <select name="portugues_escrito">
-                                    <option selected>-</option>
-                                    <option value="alto">ALTO</option>
-                                    <option value="medio">MEDIO</option>
-                                    <option value="bajo">BAJO</option>
-                                </select>
-                            </td>
-                            <td>
-                                <select name="portugues_hablado">
-                                    <option selected>-</option>
-                                    <option value="alto">ALTO</option>
-                                    <option value="medio">MEDIO</option>
-                                    <option value="bajo">BAJO</option>
-                                </select>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Otro (especifique):
-                            <br>
-                            <input type="text" name="otro_idioma" placeholder="Especifique el idioma">
-                            </td>
-                            <td>
-                                <select name="otro_escrito">
-                                    <option selected>-</option>
-                                    <option value="alto">ALTO</option>
-                                    <option value="medio">MEDIO</option>
-                                    <option value="bajo">BAJO</option>
-                                </select>
-                            </td>
-                            <td>
-                                <select name="otro_hablado">
-                                    <option selected>-</option>
-                                    <option value="alto">ALTO</option>
-                                    <option value="medio">MEDIO</option>
-                                    <option value="bajo">BAJO</option>
-                                </select>
-                            </td>
-                        </tr>
-                    </table>     
-                    <br>
-                    
-                    <h3><u>APTITUDES PERSONALES</u></h3>
-                    <label for="aptitudes">Indique, o redacte, acerca de sus aptitudes personales:</label>
-                    <br>
-                    <textarea style="width: 50%; height: 150px; ;" name="aptitudes" id="aptitudes" 
-                    ></textarea>
-                    <br>
-                    <button type="submit">Enviar</button>
-                    <button type="reset">Reiniciar</button>
-                </form>
-            </td>
-        </tr>
-    </table>
+	<table style="border-collapse: collapse; border-radius: 5px; width: 75%; margin: 3px;" bgcolor="#F2EED7" border="1" cellpadding="3" cellspacing="3" width="100%">
+		<tr>
+			<td colspan="2" align="center">
+				<h1 style="font-family: Arial, sans-serif; color: #4A4A4A; text-align: center;">FORMULARIO CURRÍCULUM VITAE</h1>
+			</td>
+		</tr>
+		<form action="">
+			<tr>
+				<td bgcolor="#f0f8ff">
+					<h3 style="color: #4A4A4A; text-align: center; font-family: Arial, Helvetica, sans-serif;"><u>DATOS PERSONALES</u></h3>
+					<label for="name">Nombre:</label><br>
+					<input type="text" name="name" id="name"><br><br>
+					<label for="lastname">Apellidos:</label><br>
+					<input type="text" name="lastname" id="lastname"><br><br>
+					<label for="direction">Dirección:</label><br>
+					<input type="text" name="direction" id="direction"><br><br>
+					<label for="phone">Teléfono:</label><br>
+					<input type="text" name="phone" id="phone"><br><br>
+					<label for="email">Email:</label><br>
+					<input type="email" name="email" id="email"><br><br>
+					<label for="picture">Foto:</label><br>
+					<input type="file" name="picture" id="picture"><br><br>
+				</td>
+				<td bgcolor="#e6e6fa" valign="top">
+					<h3 style="color: #4A4A4A; text-align: center; font-family: Arial, Helvetica, sans-serif;"><u>DATOS ACADÉMICOS</u></h3>
+					<input type="checkbox" name="primaria" id="primaria">
+					<label for="primaria">Educación Primaria</label><br><br>
+					<input type="checkbox" name="secundaria" id="secundaria">
+					<label for="secundaria">Educación Secundaria Obligatoria</label><br><br>
+					<input type="checkbox" name="bachillerato" id="bachillerato">
+					<label for="bachillerato">Bachillerato</label><br><br>
+					<input type="checkbox" name="cfgm" id="cfgm">
+					<label for="cfgm">Ciclo Formativo Grado Medio</label><br><br>
+					<input type="checkbox" name="cfgs" id="cfgs">
+					<label for="cfgs">Ciclo Formativo Grado Superior</label><br><br>
+					<input type="checkbox" name="universidad" id="universidad">
+					<label for="universidad">Universidad</label><br><br>
+					<input type="checkbox" name="master" id="master">
+					<label for="master">Master</label><br><br>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2" bgcolor="#F2EED7">
+					<h3 style="color: #4A4A4A; text-align: center; font-family: Arial, Helvetica, sans-serif;"><u>EXPERIENCIA PROFESIONAL</u></h3>
+					<select name="work" id="work">
+						<option selected>Seleccione su profesión</option>
+						<option>Administración de Sistemas</option>
+						<option>Técnico en desarrollo de aplicaciones web</option>
+						<option>Técnico en desarrollo de aplicaciones multiplataformas</option>
+						<option>Ingeniero de software</option>
+						<option>Técnico en ciberseguridad</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td bgcolor="#f0f8ff" valign="top">
+					<h3 style="color: #4A4A4A; text-align: center; font-family: Arial, Helvetica, sans-serif;"><u>APTITUDES PERSONALES</u></h3>
+					<label for="aptitudes">Indique, o redacte, acerca de sus aptitudes personales:</label><br>
+					<textarea style="width: 75%; height: 100px; margin: 10px 0; resize: vertical;" name="aptitudes" id="aptitudes"></textarea>
+				</td>
+				<td bgcolor="#e6e6fa" valign="top">
+					<h3 style="color: #4A4A4A; text-align: center; font-family: Arial, Helvetica, sans-serif;"><u>IDIOMAS</u></h3>
+					<table style="border-collapse: collapse;" border="1" cellpadding="5" cellspacing="2" width="100%">
+						<tr>
+							<th>Idioma</th>
+							<th>Nivel Escrito</th>
+							<th>Nivel Hablado</th>
+						</tr>
+						<tr>
+							<td>Inglés</td>
+							<td>
+								<select name="ingles_escrito">
+									<option selected>-</option>
+									<option value="alto">ALTO</option>
+									<option value="medio">MEDIO</option>
+									<option value="bajo">BAJO</option>
+								</select>
+							</td>
+							<td>
+								<select name="ingles_hablado">
+									<option selected>-</option>
+									<option value="alto">ALTO</option>
+									<option value="medio">MEDIO</option>
+									<option value="bajo">BAJO</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<td>Español</td>
+							<td>
+								<select name="espanol_escrito">
+									<option selected>-</option>
+									<option value="alto">ALTO</option>
+									<option value="medio">MEDIO</option>
+									<option value="bajo">BAJO</option>
+								</select>
+							</td>
+							<td>
+								<select name="espanol_hablado">
+									<option selected>-</option>
+									<option value="alto">ALTO</option>
+									<option value="medio">MEDIO</option>
+									<option value="bajo">BAJO</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<td>Francés</td>
+							<td>
+								<select name="frances_escrito">
+									<option selected>-</option>
+									<option value="alto">ALTO</option>
+									<option value="medio">MEDIO</option>
+									<option value="bajo">BAJO</option>
+								</select>
+							</td>
+							<td>
+								<select name="frances_hablado">
+									<option selected>-</option>
+									<option value="alto">ALTO</option>
+									<option value="medio">MEDIO</option>
+									<option value="bajo">BAJO</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<td>Alemán</td>
+							<td>
+								<select name="aleman_escrito">
+									<option selected>-</option>
+									<option value="alto">ALTO</option>
+									<option value="medio">MEDIO</option>
+									<option value="bajo">BAJO</option>
+								</select>
+							</td>
+							<td>
+								<select name="aleman_hablado">
+									<option selected>-</option>
+									<option value="alto">ALTO</option>
+									<option value="medio">MEDIO</option>
+									<option value="bajo">BAJO</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<td>Italiano</td>
+							<td>
+								<select name="italiano_escrito">
+									<option selected>-</option>
+									<option value="alto">ALTO</option>
+									<option value="medio">MEDIO</option>
+									<option value="bajo">BAJO</option>
+								</select>
+							</td>
+							<td>
+								<select name="italiano_hablado">
+									<option selected>-</option>
+									<option value="alto">ALTO</option>
+									<option value="medio">MEDIO</option>
+									<option value="bajo">BAJO</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<td>Portugués</td>
+							<td>
+								<select name="portugues_escrito">
+									<option selected>-</option>
+									<option value="alto">ALTO</option>
+									<option value="medio">MEDIO</option>
+									<option value="bajo">BAJO</option>
+								</select>
+							</td>
+							<td>
+								<select name="portugues_hablado">
+									<option selected>-</option>
+									<option value="alto">ALTO</option>
+									<option value="medio">MEDIO</option>
+									<option value="bajo">BAJO</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<td><input type="text" name="nuevo_idioma1" placeholder="Especifique otro idioma"></td>
+							<td>
+								<select name="nuevo_escrito1">
+									<option>-</option>
+									<option value="alto">ALTO</option>
+									<option value="medio">MEDIO</option>
+									<option value="bajo">BAJO</option>
+								</select>
+							</td>
+							<td>
+								<select name="nuevo_hablado1">
+									<option>-</option>
+									<option value="alto">ALTO</option>
+									<option value="medio">MEDIO</option>
+									<option value="bajo">BAJO</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<td><input type="text" name="nuevo_idioma2" placeholder="Especifique otro idioma"></td>
+							<td>
+								<select name="nuevo_escrito2">
+									<option>-</option>
+									<option value="alto">ALTO</option>
+									<option value="medio">MEDIO</option>
+									<option value="bajo">BAJO</option>
+								</select>
+							</td>
+							<td>
+								<select name="nuevo_hablado2">
+									<option>-</option>
+									<option value="alto">ALTO</option>
+									<option value="medio">MEDIO</option>
+									<option value="bajo">BAJO</option>
+								</select>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2" align="center">
+					<button type="submit">Enviar</button>
+					<button type="reset">Reiniciar</button>
+				</td>
+			</tr>
+		</form>
+	</table>
 </body>
 </html>
