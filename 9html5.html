@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | José Antonio Cortés Ferre</title>
+    <script>
+        window.onload = function() {
+            let x = document.getElementById("lienzo");
+            let elem = x.getContext("2d");
+            elem.beginPath();
+            elem.arc(150, 150, 75, 0, 2 * Math.PI);
+            elem.stroke();
+        };
+    </script>
+</head>
+<body>
+    <header>Listado de webs</header>
+    <hr>
+    <nav>
+        <ol>
+            <li><a href="1tamaños.html">Página <b>tamaños</b></a></li>
+            <li><a href="2listas.html">Página <b>listas</b></a></li>
+            <li><a href="3enlaces.html">Página <b>enlaces</b></a></li>
+            <li><a href="4imagenes.html">Página <b>imágenes</b></a></li>
+            <li><a href="5secciones.html">Página <b>secciones</b></a></li>
+            <li><a href="6tablas.html">Página <b>tablas</b></a></li>
+            <li><a href="7videos.html">Página <b>vídeos</b></a></li>
+            <li><a href="8formularios.html">Página <b>formularios</b></a></li>
+            <li><a href="9errores.html">Página <b>errores</b></a></li>
+            <li><a href="JoseAntonio_FORM.html">Formulario <b>CV</b></a></li>
+        </ol>
+    </nav>
+    <hr>
+    <br>
+    <canvas id="lienzo" width="300" height="300" style="border: 3px dotted #000000;">
+    </canvas>
+    <p>El anterior canvas muestra la circunferencia utilizando <mark>JavaScript</mark></p>
+    <hr>
+    <br>
+    <article>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vehicula id lectus id egestas. Nam.</p>
+    </article>
+    <hr>
+    <br>
+    <audio controls autoplay>
+        <source src="audio/relaxing-guitar-loop-v5-245859.mp3">
+    </audio>
+    <hr>
+    <footer style="background: #000000; color: #ffffff; width: max-content;"> Realizado por: Jose Antonio Cortes</footer>
+</body>
+</html>
