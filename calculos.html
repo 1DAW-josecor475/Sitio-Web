@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cálculos | José Antonio Cortés Ferre</title>    
+    </head>
+     <body>
+           <h1>Área de un rectángulo</h1>
+            <h3>Mueva los indicadores para conocer cómo varía el área de un rectángulo.</h3>    
+            <form oninput="x.value=parseInt(a.value * b.value);z.value=parseInt(a.value);y.value=parseInt(b.value)">    
+                Valores:     1 <input type="range" id="a" name="a" value="0"> 100    
+                <br><br>    
+                Valor de la base: <output name="z" for="a"> </output>
+                <br><br>    
+                Valores:    1 <input type="range" id="b" name="b" value="0"> 100
+                <br><br>
+                Valor de la altura: <output name="y" for="b"> </output>
+                <br><br>
+                Área del rectángulo: <output name="x" for="a"> </output>  
+            </form>
+        </body>
+</html>
