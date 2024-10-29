@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>U2 Tarea 9 | Jose Antonio Cortes</title>
+    <style>
+        body {
+            background-color: #FFF1DB;
+            display: block;
+            align-items: center;
+            text-align: center;
+        }
+        #mycanvas {
+            border: 1px solid #000000;
+        }
+        embed {
+            background-color: #FBFBFB;
+            border: 1px solid #000000;
+        }
+    </style>
+</head>
+<body>
+    <h1><u>HTML5 Canvas</u></h1>
+    <h2>Método fillRect()</h2>
+    <canvas id="mycanvas"></canvas>
+    <br>
+    <h1><u>SVG LOGO</u></h1>
+    <svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+            <radialGradient id="grad" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+                <stop offset="0%" style="stop-color:#9aa9ff; stop-opacity:1" />
+                <stop offset="100%" style="stop-color:#c9c4fa; stop-opacity:1" />
+            </radialGradient>
+        </defs>
+        
+        <circle cx="100" cy="100" r="95" fill="url(#grad)" stroke="#e57373" stroke-width="4"/>
+    
+        <text x="50%" y="50%" font-family="Verdana" font-size="64" fill="#FFFFFF" font-weight="bold" text-anchor="middle" dominant-baseline="middle">
+            JCF
+        </text>
+        
+        <circle cx="100" cy="100" r="85" fill="none" stroke="rgba(255, 255, 255, 0.5)" stroke-width="5" stroke-dasharray="10 5"/>
+        <circle cx="100" cy="100" r="65" fill="none" stroke="rgba(255, 255, 255, 0.3)" stroke-width="2"/>
+    
+        <path d="M60,40 Q100,10 140,40" fill="none" stroke="rgba(255,255,255,0.6)" stroke-width="2"/>
+        <path d="M60,160 Q100,190 140,160" fill="none" stroke="rgba(255,255,255,0.4)" stroke-width="2"/>
+    </svg>
+    <h1><u>Enlaces embebidos</u></h1>
+    <embed src="./3enlaces.html" width="600" height="400" type="text/html" />
+    
+
+
+    
+    <script>
+        const canvas = document.getElementById("mycanvas");
+        const context = canvas.getContext("2d");
+        let whiteCell = '#FFFFFF';
+        let blackCell = '#000000';
+        let x = 0.5;
+        let y = 0.5;
+        canvas.width = 400;
+        canvas.height = 400;
+        let delta = canvas.width / 8;
+
+        for (let i = 0; i <= 8; i++) {
+            for (let j = 0; j <= 8; j++) {
+               context.fillStyle = (i + j) % 2 == 0 ? whiteCell : blackCell;
+               context.fillRect(
+                  x + delta * (i - 1),
+                  y + delta * (j - 1),
+                  delta,
+                  delta
+               );
+            }
+        }
+    </script>
+</body>
+</html>
