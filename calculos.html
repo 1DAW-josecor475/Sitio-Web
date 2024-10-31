@@ -6,18 +6,14 @@
         <title>Cálculos | José Antonio Cortés Ferre</title>    
     </head>
      <body>
-           <h1>Área de un rectángulo</h1>
-            <h3>Mueva los indicadores para conocer cómo varía el área de un rectángulo.</h3>    
-            <form oninput="x.value=parseInt(a.value * b.value);z.value=parseInt(a.value);y.value=parseInt(b.value)">    
-                Valores:     1 <input type="range" id="a" name="a" value="0"> 100    
-                <br><br>    
-                Valor de la base: <output name="z" for="a"> </output>
-                <br><br>    
-                Valores:    1 <input type="range" id="b" name="b" value="0"> 100
-                <br><br>
-                Valor de la altura: <output name="y" for="b"> </output>
-                <br><br>
-                Área del rectángulo: <output name="x" for="a"> </output>  
-            </form>
+        <h1>Área de la circunferencia</h1>
+        <h3>Mueva el indicador para conocer cómo varía la longitud de la circunferencia con respecto al radio.</h3>    
+        <form oninput="x.value=parseInt(Math.pow(a.value, 2)* 3.1416);z.value=parseInt(a.value)">    
+            Longitud del radio:     1 <input type="range" id="a" name="a" value="0"> 100    
+            <br><br>    
+            Valor del radio: <output name="z" for="a"> </output>
+            <br><br>    
+            Área de la circunferencia: <output name="x" for="a"> </output>  
+        </form>
         </body>
 </html>
