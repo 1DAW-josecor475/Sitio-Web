@@ -5,10 +5,13 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Formulario LM | Jose Antonio Cortes</title>
 	<style>
-		body {
-			background: #0B192C;
+		* {
 			margin: 0;
 			padding: 0;
+		}
+		body {
+			background: #0B192C;
+
 			display: flex;
 			justify-content: center;
 			align-items: center;
@@ -21,7 +24,7 @@
 			border-radius: 5px;
 			width: 70%;
 		}
-		button {
+		.buttons {
 			background-color: #4A90E2;
 			color: white;
 			padding: 10px 15px;
@@ -29,7 +32,7 @@
 			border-radius: 5px;
 			cursor: pointer;
 		}
-		button:hover {
+		.buttons:hover {
 			background-color: #357ABD;
 		}
 	</style>
@@ -260,8 +263,8 @@
 			</tr>
 			<tr>
 				<td colspan="2" align="center">
-					<button type="submit">Enviar</button>
-					<button type="reset">Reiniciar</button>
+					<button class="buttons" type="submit">Enviar</button>
+					<button class="buttons" type="reset">Reiniciar</button>
 				</td>
 			</tr>
 		</form>
