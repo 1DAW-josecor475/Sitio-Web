@@ -5,6 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tarea 15 || Jose Antonio Cortes</title>
     <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0 auto;
+            background-color: #80C4E9;
+            border-radius: 25px;
+            margin-top: 25px;
+            width: 750px;
+        }
+        body {
+            margin: 0 auto;
+            background-color: #FFE6A9;
+        }
+        .columns {
+            display: inline-block;
+            column-count: 3;
+            column-gap: 50px;
+        }
         #name {
             width: fit-content;
             background-color: red;
@@ -34,65 +53,60 @@
         }
         #tb5 {
             box-shadow: 10px 10px 5px 5px lightgray;
+            margin: 0 auto;
         }
         #tb1 {
-            transition: width 2s;
+            transition: ease width 2s;
+            margin: 0 auto;
         }
         #tb1:hover {
             width: 350px;
         }
+        #opacity {
+            opacity: 0.8;
+        }
     </style>
 </head>
 <body>
-    <h5>OPACIDAD O TRANSPARENCIA</h5>
-    <hr>
-    <h1 id="name">José Antonio</h1>
-    <hr>
-    <h5>TONO, SATURACIÓN Y LUMINOSIDAD</h5>
-    <hr>
-    <h2 id="second">Cortés</h2>
-    <h3 id="third">Ferre</h3>
-    <hr>
-    <h5>GRADIENTES</h5>
-    <hr>
-    <h4 id="direction">Avenida de Andalucía, 35</h4>
-    <hr>
-    <h5>ESQUINAS REDONDEADAS</h5>
-    <hr>
-    <div id="roundedname">José Antonio</div>
-    <div id="roundedsurname">Cortés Ferre</div>
-    <hr>
-    <h5>SOMBRAS</h5>
-    <hr>
-    <table id="tb5" border="1"; cellpadding="10">
-		<caption><b>tabla con separacion entre borde y contenido de la celda</b></caption>
-		<tr> 
-			<td>fila1-celda1</td>
-			<td>fila1-celda2</td>
-			<td>fila1-celda3</td>
-		</tr>
-		<tr> 
-			<td>fila2-celda1</td>
-			<td>fila2-celda2</td>
-			<td>fila2-celda3</td>
-		</tr>
-	</table>
-    <hr>
-    <h5>TRANSICIONES</h5>
-    <hr>
-    <table id="tb1" border="1" ; align = "center">
-		<caption><b>tabla simple</b></caption>
-		<tr id="tb1tr1"> 
-			<td>fila1-celda1</td>
-			<td>fila1-celda2</td>
-			<td>fila1-celda3</td>
-		</tr>
-		<tr id="tb1tr2"> 
-			<td>fila1-celda1</td>
-			<td>fila1-celda2</td>
-			<td>fila1-celda3</td>
-		</tr>
-	</table>
-    <hr>
+    <div class="container">
+        <h5>OPACIDAD O TRANSPARENCIA</h5>
+        <h1 id="name">José Antonio</h1>
+        <h5>TONO, SATURACIÓN Y LUMINOSIDAD</h5>
+        <h2 id="second">Cortés</h2>
+        <h3 id="third">Ferre</h3>
+        <h5>GRADIENTES</h5>
+        <h4 id="direction">Avenida de Andalucía, 35</h4>
+        <h5>ESQUINAS REDONDEADAS</h5>
+        <div id="roundedname">José Antonio</div>
+        <div id="roundedsurname">Cortés Ferre</div>
+        <h5>SOMBRAS</h5>
+        <table id="tb5" border="1"; cellpadding="10">
+	    	<caption><b>tabla con separacion entre borde y contenido de la celda</b></caption>
+	    	<tr> 
+	    		<td>fila1-celda1</td>
+	    		<td>fila1-celda2</td>
+	    		<td>fila1-celda3</td>
+	    	</tr>
+	    	<tr> 
+	    		<td>fila2-celda1</td>
+	    		<td>fila2-celda2</td>
+	    		<td>fila2-celda3</td>
+	    	</tr>
+	    </table>
+        <h5>TRANSICIONES</h5>
+        <table id="tb1" border="1" ; align = "center">
+	    	<caption><b>tabla simple</b></caption>
+	    	<tr id="tb1tr1"> 
+	    		<td>fila1-celda1</td>
+	    		<td>fila1-celda2</td>
+	    		<td>fila1-celda3</td>
+	    	</tr>
+	    	<tr id="tb1tr2"> 
+	    		<td>fila1-celda1</td>
+	    		<td>fila1-celda2</td>
+	    		<td>fila1-celda3</td>
+	    	</tr>
+	    </table> 
+    </div>
 </body>
 </html>
