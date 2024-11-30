@@ -1,11 +1,68 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tarea 17 | Jose Antonio Cortes Ferre</title>
+    <title>Tarea 17 | Jose Antonio Cortes</title>
+    <style>
+        /* Estilo general */
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #FFF6E9;
+        }
+
+        h1 {
+            font-size: 2em;
+            text-align: center;
+            margin-bottom: 20px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        h1:hover {
+            background-color: green;
+            color: white;
+            transform: scale(1.2);
+        }
+
+        .iframe-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+            width: 80%;
+        }
+
+        iframe {
+            background-color: #FF7F3E;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 628px;
+            height: 420px;
+        }
+    </style>
 </head>
 <body>
-    
+    <h1>Temática: Inteligencia Artificial</h1>
+    <div class="iframe-container">
+        <!-- Video -->
+        <iframe src="https://www.youtube.com/embed/1mUZUCOyKYk?si=AHpqVSqRmNUMLIpz" title="Video explicativo"></iframe>
+        
+        <!-- Imagen -->
+        <iframe src="images/iframes-image.png" title="Imagen de IA"></iframe>
+
+        <!-- Audio -->
+        <iframe style="background-color: transparent;" allowtransparency="true" src="audio/relaxing-guitar-loop-v5-245859.mp3" title="Audio guitarra"></iframe>
+
+        <!-- Página web relacionada -->
+        <iframe src="https://hamel.dev/blog/posts/prompt/" title="Wikipedia"></iframe>
+    </div>
 </body>
 </html>
