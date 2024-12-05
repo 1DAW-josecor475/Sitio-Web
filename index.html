@@ -1,51 +1,137 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home | José Antonio Cortés Ferre</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="CSS/index.css">
+    <title>Tarea 19 | Jose Antonio Cortes</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #FDF7F4;
+            font-family: Arial, sans-serif;
+        }
+        .titulo {
+            background-color: red;
+            border-radius: 10px;
+            box-shadow: 2px 2px 8px #888888;
+            padding: 20px;
+            text-align: center;
+        }
+        .subtitulo {
+            background: linear-gradient(90deg, #FF0000, #00FF00, #0000FF);
+            transition: background 0.5s;
+            padding: 15px;
+            text-align: center;
+            width: fit-content;
+        }
+        .subtitulo:hover {
+            background: linear-gradient(180deg, #daf381, #f5d388, #f08585);
+        }
+        .thumbnail {
+            width: 100px;
+            height: 100px;
+            cursor: pointer;
+        }
+        .thumbnail:hover {
+            width: 500px;
+            height: 500px;
+            transition: width 0.5s, height 0.5s;
+        }
+        .container {
+            display: flex;
+            justify-content: flex-end;
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+        }
+        .left {
+            background-color: #d3d3d3;
+            width: 300px;
+            height: 75px;
+            border-radius: 15px;
+            margin-right: 20px;
+            padding: 10px;
+        }
+        .tabla{
+            border: 4px solid #000;
+            border-collapse: collapse;
+            background-color: #d3d3d3;
+            transition: transform 0.5s, background-color 0.5s;
+            margin-bottom: 10px;
+        }
+        .tabla:hover {
+            transform: scale(1.1);
+            background-color: #fcfcfc;
+        }
+        .indice {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            justify-content: space-between;
+            list-style-type: none;
+            margin-bottom: 10px;
+        }
+        .indice a {
+            text-decoration: none;
+            color: black;
+        }
+        #ai:hover {
+            color: yellow;
+            text-shadow: 2px 2px 2px #000000;
+        }
+        #ej_clase {
+            color:#5CB2B3;
+        }
+        #ej_clase:hover {
+            font-size: 17px;
+            cursor: hand;
+        }
+    </style>
 </head>
 <body>
-    <nav class="horizontal-nav">
-        <ul>
-            <li><a href="1tamaños.html"> <b>Tamaños</b></a></li>
-            <li><a href="2listas.html"> <b>Listas</b></a></li>
-            <li><a href="3enlaces.html"> <b>Enlaces</b></a></li>
-            <li><a href="4imagenes.html"> <b>Imágenes</b></a></li>
-            <li><a href="5secciones.html"> <b>Secciones</b></a></li>
-            <li><a href="6tablas.html"> <b>Tablas</b></a></li>
-            <li><a href="7videos.html"> <b>Vídeos</b></a></li>
-            <li><a href="8formularios.html"> <b>Formularios</b></a></li>
-            <li><a href="9errores.html"> <b>Errores</b></a></li>
-            <li><a href="JoseAntonio_FORM.html">Formulario <b>CV</b></a></li>
-            <li><a href="futbol.html"><b>Fútbol</b></a></li>
-            <li><a href="joseantonio_css3.html"><b>CSS3</b></a></li>
-        </ul>
-    </nav>
-    <nav class="vertical-nav">
-        <ul>
-            <li><a href="1tamaños.html"><b>Tamaños</b></a></li>
-            <li><a href="2listas.html"><b>Listas</b></a></li>
-            <li><a href="3enlaces.html"> <b>Enlaces</b></a></li>
-            <li><a href="4imagenes.html"> <b>Imágenes</b></a></li>
-            <li><a href="5secciones.html"> <b>Secciones</b></a></li>
-            <li><a href="6tablas.html"> <b>Tablas</b></a></li>
-            <li><a href="7videos.html"> <b>Vídeos</b></a></li>
-            <li><a href="8formularios.html"> <b>Formularios</b></a></li>
-            <li><a href="9errores.html"> <b>Errores</b></a></li>
-            <li><a href="JoseAntonio_FORM.html"><b>Formulario</b></a></li>
-            <li><a href="futbol.html"><b>Fútbol</b></a></li>
-            <li><a href="joseantonio_css3.html"><b>CSS3</b></a></li>
-        </ul>
-    </nav>
-    <div class="about">
-        <h3>José Antonio Cortés Ferre</h3>
-        <img src="./images/FotoJACF.webp" alt="Foto Alumno">
-        <h3>IES Martínez Montañés</h3>
-        <h4>Curso: <u>2024/2025</u></h4>
+    <div class="titulo">
+        <h1>TRABAJO FINAL</h1>
+    </div>
+    <div class="subtitulo">
+        <h2>HTML y CSS</h2>
+    </div>
+    <div>
+        <img src="images/FotoJACF.webp" alt="Foto" class="thumbnail">
+    </div>
+    <div class="container">
+        <div class="left">
+            <ul class="indice">
+                <li><a href="inteligencia_artificial/index.html" id="ai">Inteligencia Artificial</a></li>
+                <li><a href="ej_clase/index.html" id="ej_clase">Ejercicios de clase</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <table class="tabla">
+                <tr>
+                    <td>Nombre:</td>
+                    <td>Jose Antonio Cortes</td>
+                </tr>
+                <tr>
+                    <td>Módulo:</td>
+                    <td>Lenguaje de Marcas y Sistemas de Getsión de la Información</td>
+                </tr>
+                <tr>
+                    <td>IES:</td>
+                    <td>I.E.S. Martínez Montañés</td>
+                </tr>
+                <tr>
+                    <td>Profesor:</td>
+                    <td>Gregorio Jiménez Martínez</td>
+                </tr>
+                <tr>
+                    <td>Curso:</td>
+                    <td>1º DAW</td>
+                </tr>
+            </table>
+        </div>
     </div>
 </body>
 </html>
-
